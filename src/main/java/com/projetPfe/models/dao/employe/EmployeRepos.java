@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface EmployeRepos extends JpaRepository<Employe, Integer>{
 
-   public Employe findByMat(Long mat);
+   //public Employe findByMat(Long mat);
 
     
 }

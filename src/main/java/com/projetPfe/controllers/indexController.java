@@ -16,11 +16,6 @@ public class indexController {
     @Autowired
     EmployeRepos employeRepo;
 
-    @GetMapping(value = "/")
-    public String index(Model model){
-        model.addAttribute("employes", employeRepo.findAll());
-        return "index";
-    } 
     
     @GetMapping(value = "/add-personnel")
     public String add(Model model){ 

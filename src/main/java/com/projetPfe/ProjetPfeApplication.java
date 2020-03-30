@@ -35,7 +35,7 @@ public class ProjetPfeApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 
-		/*
+	
 		Services services = new Services();
 		services.setNomService("Logistique");
 		Services services1 = new Services();
@@ -50,7 +50,7 @@ public class ProjetPfeApplication implements CommandLineRunner{
 		
 		
 		Employe em = new Employe();
-		em.setMat(642135L);em.setNom("Keita");em.setPrenom("Soleymane");
+		em.setMat("642135");em.setNom("Keita");em.setPrenom("Soleymane");
 		em.setAdresse("Tabrequet Sale"); em.setCin("3452G");
 		em.setCnss("230986NST");em.setDatEntre(new Date());em.setDateNaiss("01/01/1992");
 		em.setLieuNaiss("Yomou");em.setNationalite("Guineenne");em.setGsm("0691023903");
@@ -61,7 +61,7 @@ public class ProjetPfeApplication implements CommandLineRunner{
 		em.setAgence(a);
 		banque.save(b1); agence.save(a);
 		service.save(services1);employe.save(em);
-		*/
+		
 		
 	}
 

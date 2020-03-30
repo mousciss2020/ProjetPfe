@@ -27,7 +27,7 @@ public class Agence  implements Serializable{
     @Column(name = "Nom_Agence") 
     private String nomAgence;
     private String adresse;
-
+    
     @ManyToOne
     private Banque banque;
 

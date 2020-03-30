@@ -10,6 +10,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.Transient;
+
+import org.springframework.web.multipart.MultipartFile;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -28,8 +31,8 @@ public class Employe implements Serializable{
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     private int id;
-    @Column(name = "Matricule", unique = true)
-    private Long mat;
+    @Column(name = "Matricule")
+    private String mat;
     @Column(name = "Nom")
     private String nom;
     @Column(name = "Prenom")
@@ -60,6 +63,8 @@ public class Employe implements Serializable{
     private String societe;
     @Column(name = "Situation_Familiale")
     private String stionFamiliale;
+    @Transient
+    private MultipartFile files;
 
     @ManyToOne 
     private Contrat contrat;

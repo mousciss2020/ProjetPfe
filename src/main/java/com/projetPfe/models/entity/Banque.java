@@ -25,7 +25,7 @@ public class Banque implements Serializable{
     private Long id;
     @Column(name = "Nom_Banque")
     private String nomBanque;
-
+    
     @OneToMany(mappedBy = "banque")
     private List<Agence> agences;
     

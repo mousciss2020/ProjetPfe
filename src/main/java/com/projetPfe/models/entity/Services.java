@@ -26,7 +26,7 @@ public class Services implements Serializable{
     private int id;
     @Column(name = "Nom_Service")
     private String nomService;
-
+    
     @OneToMany(mappedBy = "service", fetch = FetchType.LAZY)
     private List<Employe> employes;
 
